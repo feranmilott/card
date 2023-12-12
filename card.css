@@ -1,0 +1,126 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color:  hsl(33, 56%, 89%);
+}
+:root{
+    --custom-font-family:"Montserrat";
+    --custom-font-familyon:"Fraunces";
+}
+.main,.number{
+    font-family: var( --custom-font-familyon);
+}
+.title,.text{
+    
+    font-family: var(--custom-font-family);
+}
+.wrapper{
+    width: 50%;
+    display: flex;
+    border-radius: 20px;
+    margin: 5% auto;
+}
+.wrapper img{
+    height: 32rem;
+    border-radius:15px 0px 0px 15px;
+
+}
+.content{
+    padding: 20px; 
+    width: 40rem;
+    height: 32em; 
+    background-color: #ffffff;
+    border-radius: 0px 15px 15px 0px;
+}
+.title{
+    margin: 15px 0px;
+    letter-spacing: 10px;
+}
+h2{
+    font-size: 35px;
+}
+.main{
+    margin: 20px 0px;
+}
+.text p{
+    padding-bottom:  20px ;
+}
+.number{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.number h1{
+    font-size: 35px;
+}
+.number h4{
+    text-decoration: line-through;
+}
+button{
+    padding: 1rem 6rem;
+    border-radius: 10px;
+    margin-top: 3rem; 
+    background-color: hsl(158, 36%, 37%);
+}
+button:hover{
+    background-color:hsl(158, 91%, 17%); 
+}
+.mobile{
+    display: none;
+}
+a{
+   color: #ffffff; 
+   text-decoration: none;
+}
+i{
+    padding: 0px 7px;
+   color: #ffffff; 
+}
+/* @media(min-width:375px)and(max-width:768px){
+    .wrapper{
+        display: block;
+        width: 90%;
+    }
+    .picture{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .wrapper img{
+        height: 20rem;
+        width: 27rem;
+        border-radius:  15px 15px 0px 0px;
+        /* margin: 3% auto; */
+   /* }
+    .content{
+        border-radius: 0px 0px 15px 15px;
+    }
+
+} */
+
+@media(min-width:375px) and (max-width:768px){
+    .wrapper{
+        display: block;
+        width: 90%;
+    }
+    .picture{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .wrapper img{
+        height: 15rem;
+        width: 23rem;
+        border-radius:  15px 15px 0px 0px;
+    }
+    .content{
+        width: 40rem;
+        /* height:18rem ; */
+        border-radius: 0px 0px 15px 15px;
+
+    }
+}
